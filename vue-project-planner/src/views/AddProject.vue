@@ -23,6 +23,7 @@ export default {
       details: "",
       success: false,
       error: false,
+      uri: "https://jsonserver-backend.herokuapp.com/projects/",
     };
   },
   methods: {
@@ -32,7 +33,7 @@ export default {
         details: this.details,
         completed: false,
       };
-      fetch("http://localhost:3000/projects", {
+      fetch(this.uri, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(project),

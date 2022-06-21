@@ -1,28 +1,10 @@
 {
   "projects": [
     {
-      "title": "complete lesson",
-      "details": "dorem",
+      "title": "testing",
+      "details": "lorme",
       "completed": false,
       "id": 1
-    },
-    {
-      "title": "ed edd and eddy",
-      "details": "cartoon",
-      "completed": true,
-      "id": 2
-    },
-    {
-      "title": "one",
-      "details": "one",
-      "completed": true,
-      "id": 3
-    },
-    {
-      "title": "two",
-      "details": "two",
-      "completed": false,
-      "id": 4
     }
   ]
 }

@@ -18,11 +18,11 @@ export default {
     return {
       title: "",
       details: "",
-      uri: "http://localhost:3000/projects/" + this.id,
+      uri: "https://jsonserver-backend.herokuapp.com/projects/",
     };
   },
   mounted() {
-    fetch(this.uri)
+    fetch(this.uri + this.id)
       .then((res) => res.json())
       .then((data) => {
         this.title = data.title;
@@ -36,7 +36,7 @@ export default {
         title: this.title,
         details: this.details,
       };
-      fetch(this.uri, {
+      fetch(this.uri + this.id, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedProject),

@@ -26,10 +26,11 @@ export default {
       projects: [],
       filteredProjects: [],
       filterBy: "all",
+      uri: "https://jsonserver-backend.herokuapp.com/projects/",
     };
   },
   mounted() {
-    fetch("http://localhost:3000/projects")
+    fetch(this.uri)
       .then((res) => res.json())
       .then((data) => {
         this.projects = data;

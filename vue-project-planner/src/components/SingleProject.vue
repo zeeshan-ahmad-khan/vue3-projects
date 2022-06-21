@@ -29,17 +29,17 @@ export default {
   data() {
     return {
       showDetails: false,
-      uri: "http://localhost:3000/projects/" + this.project.id,
+      uri: "https://jsonserver-backend.herokuapp.com/projects/",
     };
   },
   methods: {
     deleteProject() {
-      fetch(this.uri, { method: "DELETE" })
+      fetch(this.uri + this.project.id, { method: "DELETE" })
         .then(() => this.$emit("delete", this.project.id))
         .catch((error) => console.log(error));
     },
     toggleComplete() {
-      fetch(this.uri, {
+      fetch(this.uri + this.project.id, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ completed: !this.project.completed }),
