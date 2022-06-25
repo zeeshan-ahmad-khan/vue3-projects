@@ -18,7 +18,7 @@ export default {
     return {
       title: "",
       details: "",
-      uri: "https://jsonserver-backend.herokuapp.com/projects/",
+      uri: "https://jsonserver-backend.herokuapp.com/vue-projects/",
     };
   },
   mounted() {

@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       showDetails: false,
-      uri: "https://jsonserver-backend.herokuapp.com/projects/",
+      uri: "https://jsonserver-backend.herokuapp.com/vue-projects/",
     };
   },
   methods: {
