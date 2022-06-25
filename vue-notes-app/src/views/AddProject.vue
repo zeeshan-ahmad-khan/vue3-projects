@@ -23,7 +23,7 @@ export default {
       details: "",
       success: false,
       error: false,
-      uri: "https://jsonserver-backend.herokuapp.com/vue-projects/",
+      uri: "https://jsonserver-backend.herokuapp.com/vprojects/",
     };
   },
   methods: {

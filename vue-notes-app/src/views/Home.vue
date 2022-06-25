@@ -32,7 +32,7 @@ export default {
       projects: [],
       filteredProjects: [],
       filterBy: "all",
-      uri: "https://jsonserver-backend.herokuapp.com/vue-projects/",
+      uri: "https://jsonserver-backend.herokuapp.com/vprojects/",
     };
   },
   mounted() {
