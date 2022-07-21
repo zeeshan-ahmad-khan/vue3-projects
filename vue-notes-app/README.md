@@ -1,4 +1,4 @@
-# vue-project-planner
+# vue-notes-app
 
 ## Project setup
 ```
