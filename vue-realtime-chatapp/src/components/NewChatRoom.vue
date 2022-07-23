@@ -43,21 +43,30 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 form {
-  width: 50%;
+  width: 55%;
   margin: 1rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .chat-box {
-  width: 70%;
-  margin-inline: 1.5rem;
+  width: 75%;
+  color: #1f3248;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border: 2px solid #1f3248;
 }
 
-form button {
+button {
+  margin-inline: 0.5rem;
+  color: #68c573;
   width: 100px;
-  height: 30px;
+  height: 45px;
+  background-color: #1f3248;
+  border-radius: 10px;
+  border: 2px solid #1f3248;
+  cursor: pointer;
 }
 </style>

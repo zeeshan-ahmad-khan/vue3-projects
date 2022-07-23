@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-    <h3>Welocme To VueChat</h3>
-    <SignupForm @signup="enterChat" />
     <LoginForm @login="enterChat" />
   </div>
 </template>
@@ -10,10 +8,12 @@
 import SignupForm from "@/components/SignupForm.vue";
 import LoginForm from "../components/LoginForm.vue";
 import { useRouter } from "vue-router";
+import { ref } from "@vue/reactivity";
 
 export default {
   components: { SignupForm, LoginForm },
   setup() {
+    const onLoginPage = ref(false);
     const router = useRouter();
 
     const enterChat = () => {
@@ -24,3 +24,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>

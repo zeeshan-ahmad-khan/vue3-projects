@@ -29,6 +29,7 @@ export default {
     const currentUserEmail = ref("");
     const { user } = getUser();
     const { error, documents } = getCollection("messages");
+    const message = ref(null);
 
     if (user) {
       currentUserEmail.value = user.value.email;
@@ -43,8 +44,6 @@ export default {
       }
     });
 
-    const message = ref(null);
-
     onUpdated(() => {
       message.value.scrollTop = message.value.scrollHeight;
     });
@@ -54,9 +53,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .chat-window {
-  width: 50%;
+  width: 55%;
   height: 500px;
   margin-inline: auto;
   overflow-y: auto;
@@ -65,11 +64,15 @@ export default {
   margin-block: 0.5rem;
   text-align: left;
   padding: 0.5rem;
-  box-shadow: 2px 2px 3px gray;
+  color: #68c573;
+  background-color: #1f3248;
+  box-shadow: 2px 2px 3px #1f3248;
 }
 
 .current {
-  background-color: #d7d7d7;
+  color: #1f3248;
+  background-color: #68c573;
+
   text-align: right;
 }
 </style>

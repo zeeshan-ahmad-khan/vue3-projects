@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ChatRoom from '../views/ChatRoom.vue'
+import LoginForm from '../components/LoginForm.vue'
+import SignupForm from '../components/SignupForm.vue'
 import { projectAuth } from '@/firebase/config'
 
 // AUTH GUARD
@@ -28,6 +30,11 @@ const routes = [
     name: 'Home',
     component: Home,
     beforeEnter: noAuth,
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: SignupForm,
   },
   {
     path: '/chatroom',

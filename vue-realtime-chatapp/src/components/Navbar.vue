@@ -28,10 +28,35 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .navbar {
+  padding-inline: 1rem;
+  height: 55px;
+  background-color: #68c573;
+  color: #1f3248;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.user {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user p {
+  font-size: 1.1rem;
+}
+
+button {
+  color: #68c573;
+  width: 100px;
+  height: 35px;
+  background-color: #1f3248;
+  border-radius: 10px;
+  border: 2px solid #1f3248;
+  cursor: pointer;
 }
 </style>
